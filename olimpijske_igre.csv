@@ -1,0 +1,45 @@
+sportas_id,ime,prezime,datum_rodenja,spol,drzava,igre_godina,igre_sezona,igre_grad,sport,disciplina,medalja
+1,Simone,Biles,1997-03-14,Ž,Sjedinjene Američke Države,2016,ljetne,Rio de Janeiro,Gimnastika,Greda,bronca
+1,Simone,Biles,1997-03-14,Ž,Sjedinjene Američke Države,2016,ljetne,Rio de Janeiro,Gimnastika,Parter,zlato
+1,Simone,Biles,1997-03-14,Ž,Sjedinjene Američke Države,2016,ljetne,Rio de Janeiro,Gimnastika,Preskok,zlato
+1,Simone,Biles,1997-03-14,Ž,Sjedinjene Američke Države,2016,ljetne,Rio de Janeiro,Gimnastika,Višeboj,zlato
+1,Simone,Biles,1997-03-14,Ž,Sjedinjene Američke Države,2020,ljetne,Tokio,Gimnastika,Greda,bronca
+1,Simone,Biles,1997-03-14,Ž,Sjedinjene Američke Države,2024,ljetne,Pariz,Gimnastika,Parter,srebro
+1,Simone,Biles,1997-03-14,Ž,Sjedinjene Američke Države,2024,ljetne,Pariz,Gimnastika,Preskok,zlato
+1,Simone,Biles,1997-03-14,Ž,Sjedinjene Američke Države,2024,ljetne,Pariz,Gimnastika,Višeboj,zlato
+2,Armand,Duplantis,1999-11-10,M,Švedska,2020,ljetne,Tokio,Atletika,Skok s motkom,zlato
+2,Armand,Duplantis,1999-11-10,M,Švedska,2024,ljetne,Pariz,Atletika,Skok s motkom,zlato
+4,Novak,Đoković,1987-05-22,M,Srbija,2024,ljetne,Pariz,Tenis,Pojedinačno,zlato
+9,Sandra,Elkasević,1990-06-21,Ž,Hrvatska,2016,ljetne,Rio de Janeiro,Atletika,Bacanje diska,zlato
+9,Sandra,Elkasević,1990-06-21,Ž,Hrvatska,2024,ljetne,Pariz,Atletika,Bacanje diska,bronca
+11,Eileen,Gu,2003-09-03,Ž,Kina,2022,zimske,Peking,Slobodno skijanje,Halfpipe,zlato
+11,Eileen,Gu,2003-09-03,Ž,Kina,2026,zimske,Milano i Cortina d'Ampezzo,Slobodno skijanje,Halfpipe,zlato
+15,Lara,Gut-Behrami,1991-04-27,Ž,Švicarska,2014,zimske,Soči,Alpsko skijanje,Spust,bronca
+15,Lara,Gut-Behrami,1991-04-27,Ž,Švicarska,2022,zimske,Peking,Alpsko skijanje,Superveleslalom,zlato
+15,Lara,Gut-Behrami,1991-04-27,Ž,Švicarska,2022,zimske,Peking,Alpsko skijanje,Veleslalom,bronca
+3,Faith,Kipyegon,1994-01-10,Ž,Kenija,2016,ljetne,Rio de Janeiro,Atletika,1500 m,zlato
+3,Faith,Kipyegon,1994-01-10,Ž,Kenija,2020,ljetne,Tokio,Atletika,1500 m,zlato
+3,Faith,Kipyegon,1994-01-10,Ž,Kenija,2024,ljetne,Pariz,Atletika,1500 m,zlato
+3,Faith,Kipyegon,1994-01-10,Ž,Kenija,2024,ljetne,Pariz,Atletika,5000 m,srebro
+10,Johannes Høsflot,Klæbo,1996-10-22,M,Norveška,2022,zimske,Peking,Skijaško trčanje,Sprint,zlato
+10,Johannes Høsflot,Klæbo,1996-10-22,M,Norveška,2022,zimske,Peking,Skijaško trčanje,Štafeta,srebro
+10,Johannes Høsflot,Klæbo,1996-10-22,M,Norveška,2026,zimske,Milano i Cortina d'Ampezzo,Skijaško trčanje,Skijatlon,zlato
+10,Johannes Høsflot,Klæbo,1996-10-22,M,Norveška,2026,zimske,Milano i Cortina d'Ampezzo,Skijaško trčanje,Sprint,zlato
+10,Johannes Høsflot,Klæbo,1996-10-22,M,Norveška,2026,zimske,Milano i Cortina d'Ampezzo,Skijaško trčanje,Štafeta,zlato
+8,Barbara,Matić,1994-12-03,Ž,Hrvatska,2024,ljetne,Pariz,Judo,do 70 kg,zlato
+13,Marco,Odermatt,1997-10-08,M,Švicarska,2022,zimske,Peking,Alpsko skijanje,Veleslalom,zlato
+13,Marco,Odermatt,1997-10-08,M,Švicarska,2026,zimske,Milano i Cortina d'Ampezzo,Alpsko skijanje,Ekipna kombinacija,srebro
+13,Marco,Odermatt,1997-10-08,M,Švicarska,2026,zimske,Milano i Cortina d'Ampezzo,Alpsko skijanje,Superveleslalom,bronca
+13,Marco,Odermatt,1997-10-08,M,Švicarska,2026,zimske,Milano i Cortina d'Ampezzo,Alpsko skijanje,Veleslalom,srebro
+12,Mikaela,Shiffrin,1995-03-13,Ž,Sjedinjene Američke Države,2014,zimske,Soči,Alpsko skijanje,Slalom,zlato
+12,Mikaela,Shiffrin,1995-03-13,Ž,Sjedinjene Američke Države,2026,zimske,Milano i Cortina d'Ampezzo,Alpsko skijanje,Slalom,zlato
+7,Martin,Sinković,1989-11-10,M,Hrvatska,2016,ljetne,Rio de Janeiro,Veslanje,Dvojac na pariće,zlato
+7,Martin,Sinković,1989-11-10,M,Hrvatska,2020,ljetne,Tokio,Veslanje,Dvojac bez kormilara,zlato
+7,Martin,Sinković,1989-11-10,M,Hrvatska,2024,ljetne,Pariz,Veslanje,Dvojac bez kormilara,zlato
+6,Valent,Sinković,1988-08-02,M,Hrvatska,2016,ljetne,Rio de Janeiro,Veslanje,Dvojac na pariće,zlato
+6,Valent,Sinković,1988-08-02,M,Hrvatska,2020,ljetne,Tokio,Veslanje,Dvojac bez kormilara,zlato
+6,Valent,Sinković,1988-08-02,M,Hrvatska,2024,ljetne,Pariz,Veslanje,Dvojac bez kormilara,zlato
+5,Donna,Vekić,1996-06-28,Ž,Hrvatska,2024,ljetne,Pariz,Tenis,Pojedinačno,srebro
+14,Franjo,von Allmen,2001-07-24,M,Švicarska,2026,zimske,Milano i Cortina d'Ampezzo,Alpsko skijanje,Ekipna kombinacija,zlato
+14,Franjo,von Allmen,2001-07-24,M,Švicarska,2026,zimske,Milano i Cortina d'Ampezzo,Alpsko skijanje,Spust,zlato
+14,Franjo,von Allmen,2001-07-24,M,Švicarska,2026,zimske,Milano i Cortina d'Ampezzo,Alpsko skijanje,Superveleslalom,zlato

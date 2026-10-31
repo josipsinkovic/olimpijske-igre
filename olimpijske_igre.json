@@ -1,0 +1,592 @@
+[
+  {
+    "id": 1,
+    "ime": "Simone",
+    "prezime": "Biles",
+    "datum_rodenja": "1997-03-14",
+    "spol": "Ž",
+    "drzava": "Sjedinjene Američke Države",
+    "medalje": [
+      {
+        "vrsta": "bronca",
+        "sport": "Gimnastika",
+        "disciplina": "Greda",
+        "igre": {
+          "godina": 2016,
+          "sezona": "ljetne",
+          "grad": "Rio de Janeiro"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Gimnastika",
+        "disciplina": "Parter",
+        "igre": {
+          "godina": 2016,
+          "sezona": "ljetne",
+          "grad": "Rio de Janeiro"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Gimnastika",
+        "disciplina": "Preskok",
+        "igre": {
+          "godina": 2016,
+          "sezona": "ljetne",
+          "grad": "Rio de Janeiro"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Gimnastika",
+        "disciplina": "Višeboj",
+        "igre": {
+          "godina": 2016,
+          "sezona": "ljetne",
+          "grad": "Rio de Janeiro"
+        }
+      },
+      {
+        "vrsta": "bronca",
+        "sport": "Gimnastika",
+        "disciplina": "Greda",
+        "igre": {
+          "godina": 2020,
+          "sezona": "ljetne",
+          "grad": "Tokio"
+        }
+      },
+      {
+        "vrsta": "srebro",
+        "sport": "Gimnastika",
+        "disciplina": "Parter",
+        "igre": {
+          "godina": 2024,
+          "sezona": "ljetne",
+          "grad": "Pariz"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Gimnastika",
+        "disciplina": "Preskok",
+        "igre": {
+          "godina": 2024,
+          "sezona": "ljetne",
+          "grad": "Pariz"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Gimnastika",
+        "disciplina": "Višeboj",
+        "igre": {
+          "godina": 2024,
+          "sezona": "ljetne",
+          "grad": "Pariz"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "ime": "Armand",
+    "prezime": "Duplantis",
+    "datum_rodenja": "1999-11-10",
+    "spol": "M",
+    "drzava": "Švedska",
+    "medalje": [
+      {
+        "vrsta": "zlato",
+        "sport": "Atletika",
+        "disciplina": "Skok s motkom",
+        "igre": {
+          "godina": 2020,
+          "sezona": "ljetne",
+          "grad": "Tokio"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Atletika",
+        "disciplina": "Skok s motkom",
+        "igre": {
+          "godina": 2024,
+          "sezona": "ljetne",
+          "grad": "Pariz"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "ime": "Novak",
+    "prezime": "Đoković",
+    "datum_rodenja": "1987-05-22",
+    "spol": "M",
+    "drzava": "Srbija",
+    "medalje": [
+      {
+        "vrsta": "zlato",
+        "sport": "Tenis",
+        "disciplina": "Pojedinačno",
+        "igre": {
+          "godina": 2024,
+          "sezona": "ljetne",
+          "grad": "Pariz"
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "ime": "Sandra",
+    "prezime": "Elkasević",
+    "datum_rodenja": "1990-06-21",
+    "spol": "Ž",
+    "drzava": "Hrvatska",
+    "medalje": [
+      {
+        "vrsta": "zlato",
+        "sport": "Atletika",
+        "disciplina": "Bacanje diska",
+        "igre": {
+          "godina": 2016,
+          "sezona": "ljetne",
+          "grad": "Rio de Janeiro"
+        }
+      },
+      {
+        "vrsta": "bronca",
+        "sport": "Atletika",
+        "disciplina": "Bacanje diska",
+        "igre": {
+          "godina": 2024,
+          "sezona": "ljetne",
+          "grad": "Pariz"
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "ime": "Eileen",
+    "prezime": "Gu",
+    "datum_rodenja": "2003-09-03",
+    "spol": "Ž",
+    "drzava": "Kina",
+    "medalje": [
+      {
+        "vrsta": "zlato",
+        "sport": "Slobodno skijanje",
+        "disciplina": "Halfpipe",
+        "igre": {
+          "godina": 2022,
+          "sezona": "zimske",
+          "grad": "Peking"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Slobodno skijanje",
+        "disciplina": "Halfpipe",
+        "igre": {
+          "godina": 2026,
+          "sezona": "zimske",
+          "grad": "Milano i Cortina d'Ampezzo"
+        }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "ime": "Lara",
+    "prezime": "Gut-Behrami",
+    "datum_rodenja": "1991-04-27",
+    "spol": "Ž",
+    "drzava": "Švicarska",
+    "medalje": [
+      {
+        "vrsta": "bronca",
+        "sport": "Alpsko skijanje",
+        "disciplina": "Spust",
+        "igre": {
+          "godina": 2014,
+          "sezona": "zimske",
+          "grad": "Soči"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Alpsko skijanje",
+        "disciplina": "Superveleslalom",
+        "igre": {
+          "godina": 2022,
+          "sezona": "zimske",
+          "grad": "Peking"
+        }
+      },
+      {
+        "vrsta": "bronca",
+        "sport": "Alpsko skijanje",
+        "disciplina": "Veleslalom",
+        "igre": {
+          "godina": 2022,
+          "sezona": "zimske",
+          "grad": "Peking"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "ime": "Faith",
+    "prezime": "Kipyegon",
+    "datum_rodenja": "1994-01-10",
+    "spol": "Ž",
+    "drzava": "Kenija",
+    "medalje": [
+      {
+        "vrsta": "zlato",
+        "sport": "Atletika",
+        "disciplina": "1500 m",
+        "igre": {
+          "godina": 2016,
+          "sezona": "ljetne",
+          "grad": "Rio de Janeiro"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Atletika",
+        "disciplina": "1500 m",
+        "igre": {
+          "godina": 2020,
+          "sezona": "ljetne",
+          "grad": "Tokio"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Atletika",
+        "disciplina": "1500 m",
+        "igre": {
+          "godina": 2024,
+          "sezona": "ljetne",
+          "grad": "Pariz"
+        }
+      },
+      {
+        "vrsta": "srebro",
+        "sport": "Atletika",
+        "disciplina": "5000 m",
+        "igre": {
+          "godina": 2024,
+          "sezona": "ljetne",
+          "grad": "Pariz"
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "ime": "Johannes Høsflot",
+    "prezime": "Klæbo",
+    "datum_rodenja": "1996-10-22",
+    "spol": "M",
+    "drzava": "Norveška",
+    "medalje": [
+      {
+        "vrsta": "zlato",
+        "sport": "Skijaško trčanje",
+        "disciplina": "Sprint",
+        "igre": {
+          "godina": 2022,
+          "sezona": "zimske",
+          "grad": "Peking"
+        }
+      },
+      {
+        "vrsta": "srebro",
+        "sport": "Skijaško trčanje",
+        "disciplina": "Štafeta",
+        "igre": {
+          "godina": 2022,
+          "sezona": "zimske",
+          "grad": "Peking"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Skijaško trčanje",
+        "disciplina": "Skijatlon",
+        "igre": {
+          "godina": 2026,
+          "sezona": "zimske",
+          "grad": "Milano i Cortina d'Ampezzo"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Skijaško trčanje",
+        "disciplina": "Sprint",
+        "igre": {
+          "godina": 2026,
+          "sezona": "zimske",
+          "grad": "Milano i Cortina d'Ampezzo"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Skijaško trčanje",
+        "disciplina": "Štafeta",
+        "igre": {
+          "godina": 2026,
+          "sezona": "zimske",
+          "grad": "Milano i Cortina d'Ampezzo"
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "ime": "Barbara",
+    "prezime": "Matić",
+    "datum_rodenja": "1994-12-03",
+    "spol": "Ž",
+    "drzava": "Hrvatska",
+    "medalje": [
+      {
+        "vrsta": "zlato",
+        "sport": "Judo",
+        "disciplina": "do 70 kg",
+        "igre": {
+          "godina": 2024,
+          "sezona": "ljetne",
+          "grad": "Pariz"
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "ime": "Marco",
+    "prezime": "Odermatt",
+    "datum_rodenja": "1997-10-08",
+    "spol": "M",
+    "drzava": "Švicarska",
+    "medalje": [
+      {
+        "vrsta": "zlato",
+        "sport": "Alpsko skijanje",
+        "disciplina": "Veleslalom",
+        "igre": {
+          "godina": 2022,
+          "sezona": "zimske",
+          "grad": "Peking"
+        }
+      },
+      {
+        "vrsta": "srebro",
+        "sport": "Alpsko skijanje",
+        "disciplina": "Ekipna kombinacija",
+        "igre": {
+          "godina": 2026,
+          "sezona": "zimske",
+          "grad": "Milano i Cortina d'Ampezzo"
+        }
+      },
+      {
+        "vrsta": "bronca",
+        "sport": "Alpsko skijanje",
+        "disciplina": "Superveleslalom",
+        "igre": {
+          "godina": 2026,
+          "sezona": "zimske",
+          "grad": "Milano i Cortina d'Ampezzo"
+        }
+      },
+      {
+        "vrsta": "srebro",
+        "sport": "Alpsko skijanje",
+        "disciplina": "Veleslalom",
+        "igre": {
+          "godina": 2026,
+          "sezona": "zimske",
+          "grad": "Milano i Cortina d'Ampezzo"
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "ime": "Mikaela",
+    "prezime": "Shiffrin",
+    "datum_rodenja": "1995-03-13",
+    "spol": "Ž",
+    "drzava": "Sjedinjene Američke Države",
+    "medalje": [
+      {
+        "vrsta": "zlato",
+        "sport": "Alpsko skijanje",
+        "disciplina": "Slalom",
+        "igre": {
+          "godina": 2014,
+          "sezona": "zimske",
+          "grad": "Soči"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Alpsko skijanje",
+        "disciplina": "Slalom",
+        "igre": {
+          "godina": 2026,
+          "sezona": "zimske",
+          "grad": "Milano i Cortina d'Ampezzo"
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "ime": "Martin",
+    "prezime": "Sinković",
+    "datum_rodenja": "1989-11-10",
+    "spol": "M",
+    "drzava": "Hrvatska",
+    "medalje": [
+      {
+        "vrsta": "zlato",
+        "sport": "Veslanje",
+        "disciplina": "Dvojac na pariće",
+        "igre": {
+          "godina": 2016,
+          "sezona": "ljetne",
+          "grad": "Rio de Janeiro"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Veslanje",
+        "disciplina": "Dvojac bez kormilara",
+        "igre": {
+          "godina": 2020,
+          "sezona": "ljetne",
+          "grad": "Tokio"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Veslanje",
+        "disciplina": "Dvojac bez kormilara",
+        "igre": {
+          "godina": 2024,
+          "sezona": "ljetne",
+          "grad": "Pariz"
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "ime": "Valent",
+    "prezime": "Sinković",
+    "datum_rodenja": "1988-08-02",
+    "spol": "M",
+    "drzava": "Hrvatska",
+    "medalje": [
+      {
+        "vrsta": "zlato",
+        "sport": "Veslanje",
+        "disciplina": "Dvojac na pariće",
+        "igre": {
+          "godina": 2016,
+          "sezona": "ljetne",
+          "grad": "Rio de Janeiro"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Veslanje",
+        "disciplina": "Dvojac bez kormilara",
+        "igre": {
+          "godina": 2020,
+          "sezona": "ljetne",
+          "grad": "Tokio"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Veslanje",
+        "disciplina": "Dvojac bez kormilara",
+        "igre": {
+          "godina": 2024,
+          "sezona": "ljetne",
+          "grad": "Pariz"
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "ime": "Donna",
+    "prezime": "Vekić",
+    "datum_rodenja": "1996-06-28",
+    "spol": "Ž",
+    "drzava": "Hrvatska",
+    "medalje": [
+      {
+        "vrsta": "srebro",
+        "sport": "Tenis",
+        "disciplina": "Pojedinačno",
+        "igre": {
+          "godina": 2024,
+          "sezona": "ljetne",
+          "grad": "Pariz"
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "ime": "Franjo",
+    "prezime": "von Allmen",
+    "datum_rodenja": "2001-07-24",
+    "spol": "M",
+    "drzava": "Švicarska",
+    "medalje": [
+      {
+        "vrsta": "zlato",
+        "sport": "Alpsko skijanje",
+        "disciplina": "Ekipna kombinacija",
+        "igre": {
+          "godina": 2026,
+          "sezona": "zimske",
+          "grad": "Milano i Cortina d'Ampezzo"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Alpsko skijanje",
+        "disciplina": "Spust",
+        "igre": {
+          "godina": 2026,
+          "sezona": "zimske",
+          "grad": "Milano i Cortina d'Ampezzo"
+        }
+      },
+      {
+        "vrsta": "zlato",
+        "sport": "Alpsko skijanje",
+        "disciplina": "Superveleslalom",
+        "igre": {
+          "godina": 2026,
+          "sezona": "zimske",
+          "grad": "Milano i Cortina d'Ampezzo"
+        }
+      }
+    ]
+  }
+]
