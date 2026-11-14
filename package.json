@@ -1,0 +1,28 @@
+{
+  "name": "olimpijske-igre",
+  "version": "2.0.0",
+  "description": "Otvoreni skup podataka o osvajačima medalja na olimpijskim igrama od 2014. do 2026. godine.",
+  "author": "Josip Sinković",
+  "license": "CC-BY-4.0",
+  "homepage": "https://github.com/josipsinkovic/olimpijske-igre#readme",
+  "bugs": {
+    "url": "https://github.com/josipsinkovic/olimpijske-igre/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josipsinkovic/olimpijske-igre.git"
+  },
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "izvoz": "./export.sh"
+  },
+  "dependencies": {
+    "csv-stringify": "^6.9.0",
+    "datatables.net-dt": "^3.1.5",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
+  }
+}

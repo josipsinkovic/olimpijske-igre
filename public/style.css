@@ -1,0 +1,174 @@
+:root {
+    --pozadina: #16191d;
+    --povrsina: #1f2328;
+    --tekst: #e6e8eb;
+    --prigusen: #9aa4ae;
+    --rub: #343a41;
+    --naglasak: #6cb2f5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 96rem;
+    padding: 1.5rem 1rem 3rem;
+    background: var(--pozadina);
+    color: var(--tekst);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.55;
+}
+
+a {
+    color: var(--naglasak);
+}
+
+nav {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a[aria-current="page"] {
+    color: var(--tekst);
+    border-bottom: 2px solid var(--naglasak);
+}
+
+h1 {
+    margin: 0 0 0.5rem;
+    font-size: 2rem;
+}
+
+h2 {
+    margin-top: 2.5rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--rub);
+}
+
+header p {
+    color: var(--prigusen);
+    max-width: 60rem;
+}
+
+code {
+    font-size: 0.9em;
+    background: var(--povrsina);
+    padding: 0.05em 0.3em;
+    border-radius: 3px;
+}
+
+.poveznice li {
+    margin: 0.3rem 0;
+}
+
+table.podaci {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.95rem;
+}
+
+table.podaci th,
+table.podaci td {
+    text-align: left;
+    padding: 0.45rem 0.6rem;
+    border-bottom: 1px solid var(--rub);
+    vertical-align: top;
+}
+
+table.podaci thead th {
+    background: var(--povrsina);
+}
+
+table.podaci tbody th {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+footer {
+    margin-top: 3rem;
+    color: var(--prigusen);
+    font-size: 0.9rem;
+}
+
+/* Obrazac za filtriranje */
+
+#filtar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--povrsina);
+    border: 1px solid var(--rub);
+    border-radius: 6px;
+}
+
+.polje {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1 1 14rem;
+}
+
+.polje label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#filtar input,
+#filtar select,
+#filtar button {
+    font: inherit;
+    padding: 0.45rem 0.6rem;
+    border: 1px solid var(--rub);
+    border-radius: 4px;
+    background: var(--pozadina);
+    color: var(--tekst);
+}
+
+.gumbi {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#filtar button[type="submit"] {
+    background: var(--naglasak);
+    border-color: var(--naglasak);
+    color: var(--pozadina);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#filtar button[type="reset"] {
+    cursor: pointer;
+}
+
+.izvoz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    color: var(--prigusen);
+}
+
+.izvoz a {
+    margin-left: 0.5rem;
+    font-weight: 600;
+}
+
+/* Široka tablica smije se pomicati vodoravno unutar svog okvira. */
+.dt-container {
+    overflow-x: auto;
+}
+
+table.dataTable td {
+    white-space: nowrap;
+}
