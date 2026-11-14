@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablica medalja</title>
+    <meta name="description" content="Tablični prikaz i filtriranje otvorenog skupa podataka o osvajačima medalja na olimpijskim igrama od 2014. do 2026. godine.">
+    <meta name="author" content="Josip Sinković">
+    <link rel="stylesheet" href="/vendor/datatables.net-dt/css/dataTables.dataTables.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "datatables.net": "/vendor/datatables.net/dataTables.mjs",
+                "datatables.net-dt": "/vendor/datatables.net-dt/js/dataTables.dataTables.mjs"
+            }
+        }
+    </script>
+    <script type="module" src="datatable.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Početna</a>
+            <a href="datatable.html" aria-current="page">Tablica</a>
+        </nav>
+        <h1>Tablica medalja</h1>
+    </header>
+
+    <main>
+        <form id="filtar" role="search">
+            <div class="polje">
+                <label for="tekst">Traženi tekst</label>
+                <input type="search" id="tekst" name="tekst" placeholder="npr. Valent Sinković, zlato Pariz…" autocomplete="off">
+            </div>
+            <div class="polje">
+                <label for="atribut">Atribut</label>
+                <select id="atribut" name="atribut">
+                    <option value="">Svi atributi</option>
+                    <option value="sportas_id">ID sportaša</option>
+                    <option value="ime">Ime</option>
+                    <option value="prezime">Prezime</option>
+                    <option value="datum_rodenja">Datum rođenja</option>
+                    <option value="spol">Spol</option>
+                    <option value="drzava">Država</option>
+                    <option value="igre_godina">Godina igara</option>
+                    <option value="igre_sezona">Sezona igara</option>
+                    <option value="igre_grad">Grad domaćin</option>
+                    <option value="sport">Sport</option>
+                    <option value="disciplina">Disciplina</option>
+                    <option value="medalja">Medalja</option>
+                </select>
+            </div>
+            <div class="gumbi">
+                <button type="submit">Pretraži</button>
+                <button type="reset">Poništi</button>
+            </div>
+        </form>
+
+        <div class="izvoz">
+            <span id="poruka" role="status"></span>
+            <span>
+                Preuzmi prikazane podatke:
+                <a id="preuzmi-csv" href="/api/medalje/izvoz?format=csv" download>CSV</a>
+                <a id="preuzmi-json" href="/api/medalje/izvoz?format=json" download>JSON</a>
+            </span>
+        </div>
+
+        <table id="tablica" class="display compact"></table>
+    </main>
+</body>
+</html>

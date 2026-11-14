@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osvajači olimpijskih medalja</title>
+    <meta name="description" content="Otvoreni skup podataka o osvajačima medalja na olimpijskim igrama od 2014. do 2026. godine.">
+    <meta name="author" content="Josip Sinković">
+    <meta name="keywords" content="olimpijske igre, medalje, sportaši, otvoreni podaci, CSV, JSON">
+    <link rel="alternate" type="text/csv" href="olimpijske_igre.csv" title="Skup podataka u formatu CSV">
+    <link rel="alternate" type="application/json" href="olimpijske_igre.json" title="Skup podataka u formatu JSON">
+    <link rel="describedby" type="application/schema+json" href="schema.json" title="JSON Schema skupa podataka">
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.hr">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" aria-current="page">Početna</a>
+            <a href="datatable.html">Tablica</a>
+        </nav>
+        <h1>Osvajači olimpijskih medalja</h1>
+        <p>
+            Otvoreni skup podataka o osvajačima medalja na olimpijskim igrama od 2014. do 2026. godine.
+            Obuhvaća troje ljetnih igara (Rio de Janeiro 2016, Tokio 2020, Pariz 2024) i troje zimskih igara
+            (Soči 2014, Peking 2022, Milano Cortina 2026). Za svakog sportaša navedeni su osobni podaci i popis
+            medalja koje je osvojio u disciplinama uključenima u skup. Uz poznate svjetske sportaše u skupu su
+            i hrvatski osvajači medalja: braća Sinković, Donna Vekić, Barbara Matić i Sandra Elkasević.
+        </p>
+        <p>Skup je izrađen u sklopu laboratorijske vježbe iz predmeta Otvoreno računarstvo (FER, 2026./2027.).</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Preuzimanje i pregled</h2>
+            <ul class="poveznice">
+                <li><a href="olimpijske_igre.csv" download>olimpijske_igre.csv</a> - cijeli skup podataka u formatu CSV</li>
+                <li><a href="olimpijske_igre.json" download>olimpijske_igre.json</a> - cijeli skup podataka u formatu JSON</li>
+                <li><a href="schema.json">schema.json</a> - strojno čitljivi metapodaci (JSON Schema) za JSON datoteku</li>
+                <li><a href="olimpijske_igre.sql" download>olimpijske_igre.sql</a> - dump PostgreSQL baze podataka</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Metapodaci</h2>
+            <table class="podaci">
+                <thead>
+                    <tr><th scope="col">Metapodatak</th><th scope="col">Vrijednost</th></tr>
+                </thead>
+                <tbody>
+                    <tr><th scope="row">Naziv skupa</th><td>Osvajači olimpijskih medalja (<code>olimpijske_igre</code>)</td></tr>
+                    <tr><th scope="row">Autor</th><td>Josip Sinković</td></tr>
+                    <tr><th scope="row">Verzija</th><td>2.0</td></tr>
+                    <tr><th scope="row">Datum objave</th><td>31. 10. 2026.</td></tr>
+                    <tr><th scope="row">Datum zadnje izmjene</th><td>14. 11. 2026.</td></tr>
+                    <tr><th scope="row">Licencija</th><td><a href="https://creativecommons.org/licenses/by/4.0/deed.hr">Creative Commons Imenovanje 4.0 međunarodna (CC BY 4.0)</a></td></tr>
+                    <tr><th scope="row">Jezik podataka</th><td>hrvatski</td></tr>
+                    <tr><th scope="row">Broj sportaša (instanci)</th><td>15</td></tr>
+                    <tr><th scope="row">Broj medalja</th><td>44 (32 zlatne, 6 srebrnih, 6 brončanih)</td></tr>
+                    <tr><th scope="row">Broj igara</th><td>6 (3 ljetne, 3 zimske)</td></tr>
+                    <tr><th scope="row">Broj sportova / disciplina</th><td>8 / 21</td></tr>
+                    <tr><th scope="row">Formati</th><td>CSV, JSON, SQL (dump PostgreSQL baze), JSON Schema</td></tr>
+                    <tr><th scope="row">Kodna stranica</th><td>UTF-8</td></tr>
+                    <tr><th scope="row">Baza podataka</th><td>PostgreSQL</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Licencija</h2>
+            <p>
+                Skup podataka objavljen je pod licencijom
+                <a href="https://creativecommons.org/licenses/by/4.0/deed.hr">Creative Commons Imenovanje 4.0 međunarodna (CC BY 4.0)</a>.
+                Podatke smijete slobodno dijeliti, prilagođavati i koristiti u bilo koje svrhe, uključujući komercijalne,
+                uz uvjet da navedete autora i izvor.
+            </p>
+        </section>
+
+        <section>
+            <h2>Opis atributa</h2>
+            <p>Skup sadrži vezu roditelj-dijete: jedan <strong>sportaš</strong> (roditelj) može imati više <strong>medalja</strong> (djeca).</p>
+
+            <h3>CSV (<code>olimpijske_igre.csv</code>)</h3>
+            <p>Svaki redak predstavlja jednu medalju. Podaci o sportašu ponavljaju se u svakom retku koji se odnosi na njegove medalje.</p>
+            <table class="podaci">
+                <thead>
+                    <tr><th scope="col">Stupac</th><th scope="col">Tip</th><th scope="col">Opis</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>sportas_id</code></td><td>cijeli broj</td><td>Jedinstveni identifikator sportaša</td></tr>
+                    <tr><td><code>ime</code></td><td>tekst</td><td>Ime sportaša</td></tr>
+                    <tr><td><code>prezime</code></td><td>tekst</td><td>Prezime sportaša</td></tr>
+                    <tr><td><code>datum_rodenja</code></td><td>datum (GGGG-MM-DD)</td><td>Datum rođenja sportaša</td></tr>
+                    <tr><td><code>spol</code></td><td>tekst (<code>M</code> / <code>Ž</code>)</td><td>Spol sportaša</td></tr>
+                    <tr><td><code>drzava</code></td><td>tekst</td><td>Država koju sportaš predstavlja</td></tr>
+                    <tr><td><code>igre_godina</code></td><td>cijeli broj</td><td>Godina u kojoj su održane olimpijske igre</td></tr>
+                    <tr><td><code>igre_sezona</code></td><td>tekst (<code>ljetne</code> / <code>zimske</code>)</td><td>Ljetne ili zimske igre</td></tr>
+                    <tr><td><code>igre_grad</code></td><td>tekst</td><td>Grad domaćin igara</td></tr>
+                    <tr><td><code>sport</code></td><td>tekst</td><td>Sport (npr. Atletika, Alpsko skijanje)</td></tr>
+                    <tr><td><code>disciplina</code></td><td>tekst</td><td>Disciplina unutar sporta (npr. Skok s motkom, Slalom)</td></tr>
+                    <tr><td><code>medalja</code></td><td>tekst (<code>zlato</code> / <code>srebro</code> / <code>bronca</code>)</td><td>Vrsta osvojene medalje</td></tr>
+                </tbody>
+            </table>
+
+            <h3>JSON (<code>olimpijske_igre.json</code>)</h3>
+            <p>
+                Polje objekata u kojem svaki objekt predstavlja jednog sportaša. Sportaš ima ugniježđeno polje
+                <code>medalje</code>, a svaka medalja ima ugniježđeni objekt <code>igre</code>. Struktura je
+                strojno čitljivo opisana u datoteci <a href="schema.json">schema.json</a>.
+            </p>
+            <table class="podaci">
+                <thead>
+                    <tr><th scope="col">Ključ</th><th scope="col">Tip</th><th scope="col">Opis</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>id</code></td><td>broj</td><td>Jedinstveni identifikator sportaša</td></tr>
+                    <tr><td><code>ime</code></td><td>string</td><td>Ime sportaša</td></tr>
+                    <tr><td><code>prezime</code></td><td>string</td><td>Prezime sportaša</td></tr>
+                    <tr><td><code>datum_rodenja</code></td><td>string (GGGG-MM-DD)</td><td>Datum rođenja sportaša</td></tr>
+                    <tr><td><code>spol</code></td><td>string (<code>M</code> / <code>Ž</code>)</td><td>Spol sportaša</td></tr>
+                    <tr><td><code>drzava</code></td><td>string</td><td>Država koju sportaš predstavlja</td></tr>
+                    <tr><td><code>medalje</code></td><td>polje objekata</td><td>Popis medalja sportaša</td></tr>
+                    <tr><td><code>medalje[].vrsta</code></td><td>string</td><td>Vrsta medalje (<code>zlato</code>, <code>srebro</code>, <code>bronca</code>)</td></tr>
+                    <tr><td><code>medalje[].sport</code></td><td>string</td><td>Sport</td></tr>
+                    <tr><td><code>medalje[].disciplina</code></td><td>string</td><td>Disciplina</td></tr>
+                    <tr><td><code>medalje[].igre.godina</code></td><td>broj</td><td>Godina održavanja igara</td></tr>
+                    <tr><td><code>medalje[].igre.sezona</code></td><td>string</td><td><code>ljetne</code> ili <code>zimske</code></td></tr>
+                    <tr><td><code>medalje[].igre.grad</code></td><td>string</td><td>Grad domaćin</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Model baze podataka</h2>
+            <p>Podaci su spremljeni u normaliziranu PostgreSQL bazu s četiri tablice:</p>
+            <ul>
+                <li><strong><code>igre</code></strong> (<code>id</code>, <code>godina</code>, <code>grad</code>, <code>sezona</code>): olimpijske igre. Par (godina, sezona) je jedinstven.</li>
+                <li><strong><code>discipline</code></strong> (<code>id</code>, <code>sport</code>, <code>naziv</code>): sportske discipline. Par (sport, naziv) je jedinstven.</li>
+                <li><strong><code>sportasi</code></strong> (<code>id</code>, <code>ime</code>, <code>prezime</code>, <code>datum_rodenja</code>, <code>spol</code>, <code>drzava</code>): sportaši.</li>
+                <li><strong><code>medalje</code></strong> (<code>id</code>, <code>sportas_id</code>, <code>disciplina_id</code>, <code>igre_id</code>, <code>vrsta</code>): povezuje sportaša, disciplinu i igre. Sportaš u istoj disciplini na istim igrama može imati najviše jednu medalju.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Napomene</h2>
+            <ul>
+                <li>Skup ne sadrži sve medalje navedenih sportaša, nego samo medalje osvojene u 21 disciplini uključenoj u skup i na šest obuhvaćenih igara.</li>
+                <li>Igre u Tokiju vode se kao igre 2020. godine, iako su zbog pandemije bolesti COVID-19 održane 2021.</li>
+                <li>Spol nije dio naziva discipline jer je atribut sportaša. Disciplina „Veleslalom” tako obuhvaća i mušku i žensku utrku.</li>
+                <li>Kod ekipnih disciplina (štafeta, dvojac, ekipna kombinacija) navedeni su samo sportaši uključeni u skup, a ne svi članovi ekipe.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026. Josip Sinković · <a href="https://github.com/josipsinkovic/olimpijske-igre">GitHub repozitorij</a> · CC BY 4.0</p>
+    </footer>
+</body>
+</html>

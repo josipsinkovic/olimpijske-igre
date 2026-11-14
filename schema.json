@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/josipsinkovic/olimpijske-igre/main/schema.json",
+  "title": "Osvajači olimpijskih medalja",
+  "description": "Otvoreni skup podataka o osvajačima medalja na olimpijskim igrama od 2014. do 2026. godine. Autor: Josip Sinković, licencija CC BY 4.0.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "title": "Sportaš",
+    "description": "Sportaš s osobnim podacima i popisom medalja koje je osvojio u disciplinama uključenima u skup.",
+    "required": ["id", "ime", "prezime", "datum_rodenja", "spol", "drzava", "medalje"],
+    "additionalProperties": false,
+    "properties": {
+      "id": {
+        "type": "number",
+        "title": "Identifikator",
+        "description": "Jedinstveni identifikator sportaša.",
+        "minimum": 1
+      },
+      "ime": {
+        "type": "string",
+        "title": "Ime",
+        "description": "Ime sportaša.",
+        "minLength": 1
+      },
+      "prezime": {
+        "type": "string",
+        "title": "Prezime",
+        "description": "Prezime sportaša.",
+        "minLength": 1
+      },
+      "datum_rodenja": {
+        "type": "string",
+        "title": "Datum rođenja",
+        "description": "Datum rođenja sportaša u obliku GGGG-MM-DD.",
+        "format": "date"
+      },
+      "spol": {
+        "type": "string",
+        "title": "Spol",
+        "description": "Spol sportaša: M (muški) ili Ž (ženski).",
+        "enum": ["M", "Ž"]
+      },
+      "drzava": {
+        "type": "string",
+        "title": "Država",
+        "description": "Država koju sportaš predstavlja.",
+        "minLength": 1
+      },
+      "medalje": {
+        "type": "array",
+        "title": "Medalje",
+        "description": "Popis medalja sportaša, poredan po godini igara, sportu i disciplini.",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "title": "Medalja",
+          "description": "Jedna medalja osvojena u određenoj disciplini na određenim olimpijskim igrama.",
+          "required": ["vrsta", "sport", "disciplina", "igre"],
+          "additionalProperties": false,
+          "properties": {
+            "vrsta": {
+              "type": "string",
+              "title": "Vrsta medalje",
+              "description": "Vrsta osvojene medalje.",
+              "enum": ["zlato", "srebro", "bronca"]
+            },
+            "sport": {
+              "type": "string",
+              "title": "Sport",
+              "description": "Sport u kojem je medalja osvojena (npr. Atletika, Alpsko skijanje).",
+              "minLength": 1
+            },
+            "disciplina": {
+              "type": "string",
+              "title": "Disciplina",
+              "description": "Disciplina unutar sporta (npr. Skok s motkom, Slalom).",
+              "minLength": 1
+            },
+            "igre": {
+              "type": "object",
+              "title": "Olimpijske igre",
+              "description": "Olimpijske igre na kojima je medalja osvojena.",
+              "required": ["godina", "sezona", "grad"],
+              "additionalProperties": false,
+              "properties": {
+                "godina": {
+                  "type": "number",
+                  "title": "Godina",
+                  "description": "Godina održavanja olimpijskih igara (igre u Tokiju vode se kao 2020.)."
+                },
+                "sezona": {
+                  "type": "string",
+                  "title": "Sezona",
+                  "description": "Ljetne ili zimske olimpijske igre.",
+                  "enum": ["ljetne", "zimske"]
+                },
+                "grad": {
+                  "type": "string",
+                  "title": "Grad domaćin",
+                  "description": "Grad domaćin olimpijskih igara.",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
